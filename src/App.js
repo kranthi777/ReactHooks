@@ -5,6 +5,7 @@ import {UseMemoComponent} from './useMemo.component';
 import {UseCallBackComponent} from './useCallback.component';
 import MemoComponent from './Memo';
 import HOCDemo from './hoc.component';
+import UserList from './UserList.component';
 
 function App() {
   const [displayItem, setDisplayItem] = useState(true);
@@ -35,6 +36,10 @@ function App() {
       <MemoComponent name={'kranthi'} obj={{'age':24,city:'hyd'}}/>
       <hr/>
       <HOCDemo name={'kittu'} />
+      <hr/>
+      {/*CUSTOM HOOK */}
+      <h2>Fetching data using custom hooks</h2>
+      <UserList/>
     </div>
   );
 }
