@@ -4,7 +4,7 @@ import { useFetch } from "./customHooks/useFetch";
 const UserList = () => {
   /*To prevent from fetching data on unmounted component, we can use another Hook,
    useRef. The purpose is that it should run code within useEffect only if the component 
-   is mounted to the view. Otherwise, you might warning:
+   is mounted to the view. Otherwise, you might get warning:
   */
   const isComponentMounted = useRef(true);
 

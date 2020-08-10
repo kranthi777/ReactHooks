@@ -1,11 +1,12 @@
 import React,{useState} from 'react';
 import './App.css';
 import {UseEffectComponent} from './UseEffect.component';
-import {UseMemoComponent} from './useMemo.component';
+import { UseMemoComponent } from './useMemo.component';
 import {UseCallBackComponent} from './useCallback.component';
 import MemoComponent from './Memo';
 import HOCDemo from './hoc.component';
 import UserList from './UserList.component';
+import StaticContent from './staticContent';
 
 function App() {
   const [displayItem, setDisplayItem] = useState(true);
@@ -40,6 +41,9 @@ function App() {
       {/*CUSTOM HOOK */}
       <h2>Fetching data using custom hooks</h2>
       <UserList/>
+      {/* */}
+      <h2>static content</h2>
+      <StaticContent/>
     </div>
   );
 }
