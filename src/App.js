@@ -7,7 +7,7 @@ import MemoComponent from './Memo';
 import HOCDemo from './hoc.component';
 import UserList from './UserList.component';
 import StaticContent from './staticContent';
-//
+
 
 function App() {
   const [displayItem, setDisplayItem] = useState(true);
