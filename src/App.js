@@ -7,7 +7,7 @@ import MemoComponent from './Memo';
 import HOCDemo from './hoc.component';
 import UserList from './UserList.component';
 import StaticContent from './staticContent';
-
+import BGColor from './bgcolor.component';
 
 function App() {
   const [displayItem, setDisplayItem] = useState(true);
@@ -37,7 +37,9 @@ function App() {
       <hr/>
       <MemoComponent name={'kranthi'} obj={{'age':24,city:'hyd'}}/>
       <hr/>
-      <HOCDemo name={'kittu'} />
+      <HOCDemo name={'kittu1'} city={'blr'} />
+      <hr/>
+      <BGColor color={'red'}  />
       <hr/>
       {/*CUSTOM HOOK */}
       <h2>Fetching data using custom hooks</h2>
